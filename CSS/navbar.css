@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(/image/angkor-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Kantumruy Pro", sans-serif;
+    background-color: #f6f6f6;
+    color: #086ec5;
+}
+
+.container {
+    position: relative;
+    width: 100vh;
+    margin: auto;
+}
+
+.d-flex-just-sbetween,
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .nav-brand img {
+    width: 60px;
+}
+
+.navbar .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 2px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 20px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #086ec5;
+    border: 2px solid #ffffff;
+    transition: 0.4s ease-in-out all;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #086ec5;
+}
+
+.dropdown {
+    width: 200px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in-out all;
+}
+
+.navbar .navbar-nav .nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    border-radius: 0 0 6px 6px;
+}
+
+.dropdown .dropdown-nav {
+    list-style-type: none;
+}
+
+.dropdown .dropdown-nav .dropdown-item {
+    position: relative;
+}
+
+.dropdown .dropdown-nav .dropdown-item .dropdown-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #086ec5;
+    padding: 20px 30px;
+    width: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.4s ease-in-out all;
+}
+
+.sub-dropdown {
+    width: 200px;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in-out all;
+}
+
+.dropdown .dropdown-nav .dropdown-item:hover .sub-dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+.sub-dropdown .sub-dropdown-nav {
+    list-style-type: none;
+}
+
+.sub-dropdown .sub-dropdown-nav .sub-dropdown-item .sub-dropdown-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #086ec5;
+    padding: 20px 30px;
+    width: 100%;
+    display: inline-block;
+    transition: 0.4s ease-in-out all;
+    background-color: #fff;
+}
+
+.sub-dropdown .sub-dropdown-nav .sub-dropdown-item .sub-dropdown-link:hover {
+    border-bottom: 2px solid #086ec5;
+}
+
+.content {
+    width: auto;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    /* background-color: rgba(238, 238, 238, 0); */
+    /* Light background to contrast the overlay */
+    /* border: 2px solid #086ec5; */
+    /* Blue border */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(109, 13, 13, 0.1);
+    /* Optional: add a shadow for depth */
+}
+
+.main-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+}
+
+.general,
+.images {
+    flex: 1;
+    margin: 10px;
+    background-color: #f6f6f62a;
+}
+
+.general {
+    max-width: 60%;
+}
+
+.images {
+    max-width: 35%;
+    text-align: center;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content1 {
+    width: auto;
+    height: 850px;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-color: rgb(238, 238, 238);
+    /* Light background to contrast the overlay */
+    border: 2px solid #086ec5;
+    /* Blue border */
+    border-radius: 8px;
+    margin-top: 20px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(109, 13, 13, 0.1);
+    /* Optional: add a shadow for depth */
+}
+
+.main-content1 {
+    margin-top: 20%;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #ffffff3b;
+    border: 2px solid rgba(13, 109, 21, 0.507);
+}
+
+.general1,
+.images1 {
+    flex: 1;
+    margin: 10px;
+    border-radius: 8px;
+    border: rebeccapurple;
+    background-color: #f6f6f600;
+}
+
+.general1 {
+    max-width: 60%;
+}
+
+.images1 {
+    max-width: 35%;
+    text-align: center;
+}
+
+.images1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p i {
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    margin-top: 20%;
+    letter-spacing: 2px;
+    margin: auto;
+    left: 30px;
+    color: #ff7600;
+}

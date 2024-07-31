@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- <link rel="stylesheet" href="../index.htm" /> -->
+</head>
+
+<body>
+    <div class=" main ">
+        <div class="navbar ">
+            <div class="icon ">
+                <h2 class="logo ">CAMBODIA</h2>
+            </div>
+            <div class="menu ">
+                <ul>
+                    <li>
+                        <a href="../index.htm " onclick="showSection( 'home') ">Home</a></li>
+                    <li><a href="# " onclick="showSection( 'about') ">About</a></li>
+                    <li><a href="# " onclick="showSection( 'service') ">Service</a></li>
+                    <li><a href="# " onclick="showSection( 'design') ">Design</a></li>
+                    <li><a href="# " onclick="showSection( 'contact') ">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search ">
+                <input class="srch " type="search " placeholder="type to text " />
+                <button class="btn "><a>search</a></button>
+            </div>
+        </div>
+
+        <div class="content ">
+            <section id="home ">
+                <h1>Web Design & <br /><span>Development</span> <br />Course</h1>
+                <p class="par ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br /> Nesciunt dolorem magnam sed fugiat voluptatibus eum nam pariatur, recusandae dolor mollitia adipisci <br /> repellendus tempora placeat omnis deleniti, odit quibusdam nisi tenetur.
+                </p>
+                <button class="cn ">
+            <a href="# " onclick="showForm( 'login') ">Join us</a>
+          </button>
+            </section>
+
+            <section id="about " style="display: none ">
+                <h1>About Us</h1>
+                <p class="par ">This is the about section.</p>
+            </section>
+
+            <section id="service " style="display: none ">
+                <h1>Our Services</h1>
+                <p class="par ">This is the service section.</p>
+            </section>
+
+            <section id="design " style="display: none ">
+                <h1>Design</h1>
+                <p class="par ">This is the design section.</p>
+            </section>
+
+            <section id="contact " style="display: none ">
+                <h1>Contact Us</h1>
+                <p class="par ">This is the contact section.</p>
+            </section>
+
+            <div class="form " id="login-form " style="display: none ">
+                <h2>Login Here</h2>
+                <input type="email " name="email " placeholder="Enter Email Here " />
+                <input type="password " name="password " placeholder="Enter Password Here " />
+                <button class="btn " onclick="showSection( 'home') ">
+            <a href="# ">Login</a>
+          </button>
+                <p class="link ">
+                    Don't have an account<br />
+                    <a href="# " onclick="showForm( 'signup') ">Sign up Here</a>
+                </p>
+                <br />
+                <p class="liw ">Log in with</p>
+                <br />
+                <div class="icons ">
+                    <a href="# ">
+                        <ion-icons name="logo-facebook ">facebook</ion-icons>
+                    </a>
+                    <a href="# ">
+                        <ion-icons name="logo-instagram ">instagram</ion-icons>
+                    </a>
+                    <a href="# ">
+                        <ion-icons name="logo-twitter ">twitter</ion-icons>
+                    </a>
+                    <a href="# ">
+                        <ion-icons name="logo-google ">google</ion-icons>
+                    </a>
+                    <a href="# ">
+                        <ion-icons name="logo-Microsoft ">Microsoft</ion-icons>
+                    </a>
+                </div>
+            </div>
+            <div class="form " id="signup-form " style="display: none ">
+                <h2>Sign Up Here</h2>
+                <input type="email " name="email " placeholder="Enter Email Here " />
+                <input type="password " name="password " placeholder="Enter Password Here " />
+                <button class="btn " onclick="showSection( 'home') ">
+            <a href="# ">Sign Up</a>
+          </button>
+                <p class="link ">
+                    Already have an account<br />
+                    <a href="# " onclick="showForm( 'login') ">Log in Here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/function.js ">
+    </script>
+</body>
+
+</html>
